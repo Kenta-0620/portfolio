@@ -8,23 +8,48 @@ body {
   /* } */
 }
 
+#title-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+#title {
+  width: 300px;
+  height: 50px;
+  font-size: 12px;
+  color: #333;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 14px;
+  color: #333;
+}
+
 h2 {
-  border-bottom: solid 1px #25271f;
-  margin-top: 100px;
+  display: inline-block;
+  border-bottom: solid 1px #333;
+  text-align: center;
+  margin-top: 150px;
 }
 
 nav ul {
   display: flex;
-  margin-top: 50px;
+  justify-content: right;
+  margin-top: 20px;
+  margin-left: 300px;
 }
 
 nav li {
-  padding: 0 30px;
+  padding: 0 0 0 60px;
   font-size: 0.8rem;
+  /* writing-mode: vertical-rl; */
+  text-align: start;
 }
 
 nav li a {
-  color: #25271f;
+  color: #333;
 }
 
 .main {
@@ -37,28 +62,28 @@ nav li a {
   display: flex;
   text-align: center;
   justify-content: center;
-  height: 60px;
-  margin-top: 60px;
+  height: 30px;
+  margin-top: 200px;
 }
 
 .mainphrase2 {
   display: flex;
   text-align: center;
   justify-content: center;
-  height: 60px;
-  padding-left: 30px;
+  height: 30px;
+  padding-left: 200px;
   margin-top: 30px;
 }
 
-#green {
-  font-size: 60px;
-  color: #214001;
+#blue {
+  font-size: 36px;
+  color: #5c9291;
   margin: -15px 0 40px 0;
 }
 
 #red {
-  font-size: 60px;
-  color: #e42859;
+  font-size: 36px;
+  color: #ef454a;
   margin: -15px 0 40px 0;
 }
 
@@ -66,12 +91,25 @@ nav li a {
   display: flex;
   text-align: right;
   justify-content: right;
-  margin-top: 40px;
   font-size: 0.9rem;
+  margin-right: -20px;
 }
 
 .sign p {
-  margin-top: 25px;
+  margin-top: 200px;
+  margin-right: -42px;
+  z-index: 20;
+}
+
+.sign img {
+  width: 90px;
+  height: 70px;
+  margin-top: 175px;
+  z-index: 10;
+}
+
+#work .skills {
+  margin-top: 60px;
 }
 
 #work .work-icon {
@@ -79,50 +117,62 @@ nav li a {
 }
 
 #work .work-details {
-  margin: 20px 20px 0 20px;
+  margin: 20px 30px 0 20px;
   justify-content: space-between;
 }
 
-#product .inner {
-  width: 1200px;
-  height: 600px;
-  background-color: #e6e5e4;
-}
-
-#product .contents {
+#product .content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: #e6e5e4;
-}
-
-#product .contens p {
-  vertical-align: middle;
+  padding: 20px 20px 0;
+  margin-top: 60px;
 }
 
 #product .detail-left {
   display: flex;
-  margin-right: 10px;
+  width: 50%;
+  text-align: left;
+  margin-right: -10px;
 }
 
 #product .detail-right {
   display: flex;
-  margin-left: 10px;
+  width: 50%;
+  text-align: left;
+  margin-right: -10px;
 }
 
 #product .detail-left img {
   width: 255px;
   height: 180px;
+  margin: 15px;
 }
 
 #product .detail-right img {
   width: 255px;
   height: 180px;
+  margin: 15px;
+}
+
+#product .detail-content {
+  padding: 10px 10px 10px 0;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+#product .detail-content .text {
+  word-wrap: break-word;
+  font-size: 0.7rem;
+  text-align: left;
 }
 
 #greeting p {
   text-align: center;
   margin: auto;
   line-height: 2rem;
+  margin-top: 50px;
 }
 
 #contact #form {
@@ -130,11 +180,22 @@ nav li a {
   margin: auto;
 }
 
+#contact .flex-box {
+  text-align: left;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+label {
+  display: block;
+  width: 33%;
+}
+
 #contact .contact-textbox {
   width: 700px;
   height: 30px;
   background-color: #e6e5e4;
-  border: solid 1px #214001;
+  border: solid 1px #333;
 }
 
 #contact .contact-heading {
@@ -156,13 +217,13 @@ nav li a {
   width: 700px;
   height: 200px;
   background-color: #e6e5e4;
-  border: solid 1px #214001;
+  border: solid 1px #333;
 }
 
 #footer {
   width: 1200px;
   height: 100px;
-  background-color: #769cbf;
+  background-color: #5c9291;
   margin: 100px auto 0 auto;
 }
 
@@ -176,11 +237,12 @@ nav li a {
 }
 
 #footer li a {
-  color: #214001;
+  color: #ffffff;
 }
 
 #footer p {
   font-size: 0.5rem;
-  margin: auto;
+  margin: 20px auto auto auto;
   text-align: center;
+  color: #ffffff;
 }

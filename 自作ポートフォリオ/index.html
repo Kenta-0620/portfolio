@@ -28,6 +28,8 @@
 
   <body>
     <header>
+        <div id="title-line">
+        <h1 id="title">K.Nagano</h1>
         <nav class="inner">
             <ul>
             <li><a href="#work">仕事</a></li>
@@ -36,24 +38,26 @@
             <li><a href="#contact">お問合せ</a></li>
             </ul>
         </nav>
+    </div>
     </header>
 
     <main>
         <div class="inner">
             <div class="main">
                 <div class="mainphrase1">
-                    <h1>伝えたいを</h1>
-                    <h1 id="green">「かたち」</h1>
-                    <h1>に</h1>
+                    <h1>伝えたいを「</h1>
+                    <h1 id="blue">かたち</h1>
+                    <h1>」に</h1>
                 </div>
                 <div class="mainphrase2">
-                    <h1>知りたいに</h1>
-                    <h1 id="red">「こたえる」</h1>
+                    <h1>知りたいに「</h1>
+                    <h1 id="red">こたえる</h1>
+                    <h1>」</h1>
                 </div>
             </div>
             <div class="sign">
-            <p>Webサイト制作承ります。</p>
-            <img src="img/印.png" alt="永野" />
+                <p>Webサイト制作承ります</p>
+            <img src="img/ハンコ.png" alt="永野" />    
             </div>
         </div>
       
@@ -61,8 +65,8 @@
         <section id="work" class="inner">
           <h2>仕事</h2>
           <div>
-            <div>
-                <img src="img/Skills.png" alt="skills" />
+            <div class="skills">
+                <img src="img/skills2.png" alt="skills" />
             </div>
             <div class="work-icon">
                 <img class="work-details" src="img/Webサイト制作.png" alt="Webサイト制作" />
@@ -75,35 +79,65 @@
 
         <section id="product" class="inner">
           <h2>制作物</h2>
-          <div class="contents">
+          <div class="content">
             <div class="detail-left">
-              <p>texttexttexttexttexttexttexttexttext</p>
-              <img src="img/html1.png" alt="制作物１" />
+                <a href=""><img src="img/html1.png" alt="制作物１" /></a>
+            <div class="detail-content">
+                <h3>コーポレートサイト</h3>
+                <p class="detail-skill">HTML/CSS/JavaScript/jQuery</p>
+                <p class="text">ブランドカラーを基調としたサイトデザインとし、
+                    PCのWebサイト制作はもちろんのこと、スマートフォンでも見やすくするためレスポンシブ対応を
+                    施しております。</p>
+             </div>
             </div>
-            <div class="detail-right">
+              <div class="detail-right">
               <img src="img/html2.png" alt="制作物２" />
-              <p>texttexttexttexttexttexttexttexttext</p>
+              <div class="detail-content">
+                <h3>プロフィールサイト</h3>
+                <p class="detail-skill">HTML/CSS</p>
+                <p class="text"> 
+                    シンプルな技術を使用しておりますので、画像類のデータがございましたら 
+                    2~3日程度で作成することができます。</p>
             </div>
-          </div>
-          <div class="contents">
+             </div>
             <div class="detail-left">
-              <p>texttexttexttexttexttexttexttexttext</p>
-              <img src="img/wordpress1.png" alt="制作物3" />
-            </div>
+                <a href="https://beautyparlor-site-sample.com/"><img src="img/wordpress1.png" alt="制作物3" /></a>
+                <div class="detail-content">
+                    <h3>美容室のHP</h3>
+                    <p class="detail-skill">WordPress</p>
+                    <p class="text">トップ画面での画像スライド、口コミ情報の表示、
+                        GoogleMapでの店舗所在地の表示、 
+                        お問い合わせフォームなどを実装しております。</p>
+                  </div>                  
+             </div>
             <div class="detail-right">
-              <img src="img/wordpress2.png" alt="制作物4" />
-              <p>texttexttexttexttexttexttexttexttext</p>
+              <a href="https://university-site-sample.com/"><img src="img/wordpress2.png" alt="制作物4" /></a>
+              <div class="detail-content">
+                <h3>大学のHP</h3>
+                <p class="detail-skill">WordPress/PHP</p>
+                <p class="text"> 同じようなデザインで学校機関や企業様のHPを作成することが可能です。
+                    ブログのようにコンテンツを投稿できる機能を取り揃えています。
+                    またSNSのフィードをサイト上に表示させることも可能です。 
+                    </p>
+             </div>
             </div>
-          </div>
-          <div class="contents">
-            <div class="detail-left">
-              <p>texttexttexttexttexttexttexttexttext</p>
-              <img src="" alt="制作物5" />
+            <!-- <div class="detail-left">
+                <img src="" alt="制作物5" />
+              <div class="detail-content">
+                <h3>サイト名</h3>
+                <p class="detail-skill">2024/11/30</p>
+                <p class="text">楽しかったです。</p>
+             </div>
+           
             </div>
             <div class="detail-right">
               <img src="" alt="制作物6" />
-              <p>texttexttexttexttexttexttexttexttext</p>
-            </div>
+              <div class="detail-content">
+                <h3>サイト名</h3>
+                <p class="detail-skill">2024/11/30</p>
+                <p class="text">楽しかったです。</p>
+             </div>
+             </div> -->
           </div>
         </section>
 
@@ -149,13 +183,15 @@
                     <div class="contact-heading">
                       <label class="contact-label">ご希望の連絡先<span class="contact-span">必須</span></label>
                     </div>
-                    <div>
-                      <input class="checkbox" type="checkbox" value="newsite" name="contact"><label>新規サイトの作成</label>
-                      <input class="checkbox" type="checkbox" value="maintenance" name="contact"><label>サイトの部分的な修正</label>
-                      <input class="checkbox" type="checkbox" value="resposive" name="contact"><label>スマホ・タブレット対応</label><br>
-                      <input class="checkbox" type="checkbox" value="renovation" name="contact"><label>既存サイトのリニューアル</label>
-                      <input class="checkbox" type="checkbox" value="wordpress" name="contact"><label>WordPressサイト作成</label>
-                      <input class="checkbox" type="checkbox" value="other" name="contact"><label>ご相談・その他</label>
+                    <div class="flex-box"> 
+                        <!-- ここにクラスを振ってテキストアラインレフト -->
+                         <!-- ラベルの中にインプット荒れると文字押すだけでチェックできる -->
+                      <label><input class="checkbox" type="checkbox" value="newsite" name="contact">新規サイトの作成</label>
+                      <label><input class="checkbox" type="checkbox" value="maintenance" name="contact">サイトの部分的な修正</label>
+                      <label><input class="checkbox" type="checkbox" value="resposive" name="contact">スマホ・タブレット対応</label><br>
+                      <label><input class="checkbox" type="checkbox" value="renovation" name="contact">既存サイトのリニューアル</label>
+                      <label><input class="checkbox" type="checkbox" value="wordpress" name="contact">WordPressサイト作成</label>
+                      <label><input class="checkbox" type="checkbox" value="other" name="contact">ご相談・その他</label>
                     </div>
                   </div>
                 <div>
