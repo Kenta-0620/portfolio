@@ -64,6 +64,7 @@ nav li a {
   justify-content: center;
   height: 30px;
   margin-top: 200px;
+  margin-right: 100px;
 }
 
 .mainphrase2 {
@@ -71,8 +72,8 @@ nav li a {
   text-align: center;
   justify-content: center;
   height: 30px;
-  padding-left: 200px;
   margin-top: 30px;
+  margin-left: 100px;
 }
 
 #blue {
@@ -162,10 +163,17 @@ nav li a {
   width: 50%;
 }
 
+#product .detail-content .detail-skill {
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
 #product .detail-content .text {
   word-wrap: break-word;
   font-size: 0.7rem;
   text-align: left;
+  width: 90%;
+  margin-top: 15px;
 }
 
 #greeting p {
@@ -245,4 +253,187 @@ label {
   margin: 20px auto auto auto;
   text-align: center;
   color: #ffffff;
+}
+
+/*media Queries 767
+----------------------------------------------------*/
+@media screen and (max-width: 767px) {
+  :before,
+  ::after {
+    box-sizing: unset;
+  }
+
+  #title {
+    margin: 10px 0 0 20px;
+  }
+  #title-line {
+    display: block;
+  }
+
+  .inner {
+    display: block;
+    justify-content: left;
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+  }
+
+  nav li {
+    padding: 0 0 0 20px;
+    font-size: 0.7rem;
+    writing-mode: vertical-rl;
+    text-align: start;
+  }
+
+  h2 {
+    font-size: 0.9rem;
+  }
+
+  .mainphrase1 {
+    margin-top: 100px;
+  }
+
+  .mainphrase2 {
+    padding-left: 50px;
+  }
+
+  #blue {
+    font-size: 24px;
+  }
+
+  #red {
+    font-size: 24px;
+  }
+
+  .sign {
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    font-size: 0.6rem;
+    margin-right: -15px;
+  }
+
+  .sign p {
+    margin-top: 88px;
+    margin-right: -26px;
+    z-index: 20;
+  }
+
+  .sign img {
+    width: 55px;
+    height: 40px;
+    margin-top: 75px;
+    z-index: 10;
+  }
+
+  #work .skills > img {
+    max-width: 100%;
+  }
+
+  #work .work-icon > img {
+    width: 100px;
+  }
+
+  #product .content {
+    display: block;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #product .detail-left {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #product .detail-right {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #product .detail-left img {
+    margin: 100px 15px 0;
+    align-items: center;
+    width: 300px;
+    height: auto;
+  }
+
+  #product .detail-right img {
+    margin: 100px 15px 0;
+    align-items: center;
+    width: 300px;
+    height: auto;
+  }
+
+  #product .detail-content {
+    width: 300px;
+    padding: 0;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  h3 {
+    width: 300px;
+    text-align: center;
+  }
+  #product .detail-content .detail-skill {
+    width: 300px;
+    text-align: center;
+    font-size: 0.7rem;
+    opacity: 0.7;
+  }
+  #product .detail-content .text {
+    width: 300px;
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  #greeting p {
+    text-align: left;
+    margin-left: 5%;
+
+    font-size: 0.8rem;
+  }
+
+  #contact .contact-label {
+    margin-left: 5%;
+  }
+
+  #contact .contact-textbox {
+    width: 90%;
+  }
+
+  #contact #message {
+    width: 100%;
+  }
+  #contact .checkbox {
+    margin-top: 10px;
+    margin-left: 5%;
+  }
+
+  #contact .flex-box {
+    display: block;
+  }
+
+  #contact label {
+    display: block;
+    width: 100%;
+  }
+
+  #contact #message {
+    width: 90%;
+    height: 200px;
+    background-color: #e6e5e4;
+    border: solid 1px #333;
+  }
+
+  #footer {
+    width: 100%;
+  }
+
+  #footer li {
+    font-size: 0.6rem;
+  }
 }
