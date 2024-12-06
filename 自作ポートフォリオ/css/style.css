@@ -8,18 +8,19 @@ body {
   /* } */
 }
 
-#title-line {
+header .inner {
+  padding: 30px 0;
   display: flex;
   justify-content: space-between;
 }
 
 #title {
+  max-width: 50%;
   width: 300px;
   height: 50px;
   font-size: 12px;
   color: #333;
-  margin-left: 200px;
-  margin-top: 20px;
+  text-align: left;
 }
 
 h1 {
@@ -110,16 +111,30 @@ nav li a {
 }
 
 #work .skills {
-  margin-top: 60px;
+  margin: 60px auto 0 auto;
+  width: 600px;
+  height: auto;
+}
+
+#work li {
+  max-width: 24%;
+  padding: 20px;
+  display: inline-block;
+  margin: 0;
+}
+
+#work img.work-details {
+  padding: 0;
+  margin: 0;
+}
+
+#work img {
+  width: 100%;
+  display: block;
 }
 
 #work .work-icon {
   margin-top: 30px;
-}
-
-#work .work-details {
-  margin: 20px 30px 0 20px;
-  justify-content: space-between;
 }
 
 #product .content {
@@ -131,30 +146,17 @@ nav li a {
   margin-top: 60px;
 }
 
-#product .detail-left {
+#product .detail {
   display: flex;
   width: 50%;
   text-align: left;
-  margin-right: -10px;
+  padding-right: -10px;
 }
 
-#product .detail-right {
-  display: flex;
-  width: 50%;
-  text-align: left;
-  margin-right: -10px;
-}
-
-#product .detail-left img {
+#product .detail img {
   width: 255px;
   height: 180px;
-  margin: 15px;
-}
-
-#product .detail-right img {
-  width: 255px;
-  height: 180px;
-  margin: 15px;
+  padding: 15px;
 }
 
 #product .detail-content {
@@ -173,7 +175,7 @@ nav li a {
   font-size: 0.7rem;
   text-align: left;
   width: 90%;
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
 #greeting p {
@@ -194,7 +196,7 @@ nav li a {
   width: 100%;
   flex-wrap: wrap;
 }
-label {
+#contact label {
   display: block;
   width: 33%;
 }
@@ -265,7 +267,9 @@ label {
 
   #title {
     margin: 10px 0 0 20px;
+    width: 100px;
   }
+
   #title-line {
     display: block;
   }
@@ -273,14 +277,21 @@ label {
   .inner {
     display: block;
     justify-content: left;
-    max-width: 767px;
+    max-width: 100%;
+    width: 767px;
     margin: 0 auto;
     padding: 0 auto;
     text-align: center;
   }
 
+  nav ul {
+    display: flex;
+    justify-content: right;
+    margin: 0;
+  }
+
   nav li {
-    padding: 0 0 0 20px;
+    padding: 0 20px 0 0;
     font-size: 0.7rem;
     writing-mode: vertical-rl;
     text-align: start;
@@ -295,7 +306,7 @@ label {
   }
 
   .mainphrase2 {
-    padding-left: 50px;
+    padding-left: 30px;
   }
 
   #blue {
@@ -311,7 +322,7 @@ label {
     text-align: right;
     justify-content: right;
     font-size: 0.6rem;
-    margin-right: -15px;
+    margin-right: 0px;
   }
 
   .sign p {
@@ -327,56 +338,64 @@ label {
     z-index: 10;
   }
 
-  #work .skills > img {
-    max-width: 100%;
+  #work .skills {
+    width: 300px;
+    margin: 50px auto 0;
   }
 
   #work .work-icon > img {
     width: 100px;
   }
 
+  #work li {
+    max-width: 48%;
+    padding: 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 5px;
+  }
+
+  #work img.work-details {
+    padding: 20px 30px 30px 20px;
+    margin: 0;
+    justify-content: space-between;
+  }
+
   #product .content {
     display: block;
     justify-content: center;
     width: 100%;
+    margin: 0;
   }
 
-  #product .detail-left {
+  #product .detail {
     display: block;
     width: 100%;
     text-align: center;
   }
 
-  #product .detail-right {
-    display: block;
-    width: 100%;
+  #product .detail img {
+    padding: 50px 0 0;
+    align-items: center;
+    width: 300px;
+    height: auto;
     text-align: center;
-  }
-
-  #product .detail-left img {
-    margin: 100px 15px 0;
-    align-items: center;
-    width: 300px;
-    height: auto;
-  }
-
-  #product .detail-right img {
-    margin: 100px 15px 0;
-    align-items: center;
-    width: 300px;
-    height: auto;
   }
 
   #product .detail-content {
     width: 300px;
     padding: 0;
-    margin-left: 5%;
+    padding-left: 10%;
     text-align: center;
   }
 
   h3 {
     width: 300px;
     text-align: center;
+  }
+
+  #product h2 {
+    margin-bottom: 10px;
   }
   #product .detail-content .detail-skill {
     width: 300px;
@@ -387,18 +406,19 @@ label {
   #product .detail-content .text {
     width: 300px;
     text-align: left;
-    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 50px;
   }
 
   #greeting p {
     text-align: left;
-    margin-left: 5%;
-
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 0.8rem;
   }
 
   #contact .contact-label {
-    margin-left: 5%;
+    padding-left: 5%;
   }
 
   #contact .contact-textbox {
@@ -410,7 +430,7 @@ label {
   }
   #contact .checkbox {
     margin-top: 10px;
-    margin-left: 5%;
+    padding-left: 5%;
   }
 
   #contact .flex-box {
@@ -419,7 +439,9 @@ label {
 
   #contact label {
     display: block;
+    max-width: 100%;
     width: 100%;
+    padding-left: 5%;
   }
 
   #contact #message {
@@ -435,5 +457,6 @@ label {
 
   #footer li {
     font-size: 0.6rem;
+    padding: 20px 20px 20px 10px;
   }
 }
